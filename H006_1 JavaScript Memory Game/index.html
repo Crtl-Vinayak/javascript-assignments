@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Hello World H006-1 Memory Game</title>
+<style>
+body {
+	background-color: cyan;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+}
+#player1 {
+	display: flex;
+	justify-content: center;
+	font-family: sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 10px;
+	background-color: yellow;
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+#whosRound {
+	display: flex;
+	justify-content: center;
+	font-family: sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	margin: 10px;
+	background-color: magenta;
+	grid-column: 4/6;
+	grid-row: 1/2;
+}
+#whosRound p {
+	color: white;
+}
+#player2 {
+	display: flex;
+	justify-content: center;
+	font-family: sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 10px;
+	background-color: yellow;
+	grid-column: 8/9;
+	grid-row: 1/2;
+}
+
+.square {
+	margin: 10px;
+	border: 1px solid black;
+	background-color: white;
+	width: 200px;
+	height: 200px;
+}
+
+#img1 {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+#img2 {
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+#img3 {
+	grid-column: 4/5;
+	grid-row: 2/3;
+}
+#img4 {
+	grid-column: 5/6;
+	grid-row: 2/3;
+}
+#img5 {
+	grid-column: 6/7;
+	grid-row: 2/3;
+}
+#img6 {
+	grid-column: 7/8;
+	grid-row: 2/3;
+}
+
+#img7 {
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+#img8 {
+	grid-column: 3/4;
+	grid-row: 3/4;
+}
+#img9 {
+	grid-column: 4/5;
+	grid-row: 3/4;
+}
+#img10 {
+	grid-column: 5/6;
+	grid-row: 3/4;
+}
+#img11 {
+	grid-column: 6/7;
+	grid-row: 3/4;
+}
+#img12 {
+	grid-column: 7/8;
+	grid-row: 3/4;
+}
+
+#img13 {
+	grid-column: 2/3;
+	grid-row: 4/5;
+}
+#img14 {
+	grid-column: 3/4;
+	grid-row: 4/5;
+}
+#img15 {
+	grid-column: 4/5;
+	grid-row: 4/5;
+}
+#img16 {
+	grid-column: 5/6;
+	grid-row: 4/5;
+}
+#img17 {
+	grid-column: 6/7;
+	grid-row: 4/5;
+}
+#img18 {
+	grid-column: 7/8;
+	grid-row: 4/5;
+}
+
+#next {
+	display: flex;
+	justify-content: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	background-color: yellow;
+	margin: 20px;
+	grid-column: 4/6;
+	grid-row: 5/6;
+	font-size: 3em;
+}
+
+</style>
+</head>
+<body>
+
+<div id="player1"><p>Player 1: </p></div>
+<div id="whosRound"><p>Aan de beurt: </p></div>
+<div id="player2"><p>Player 2: </p></div>
+
+<div id="img1" class="square">1</div>
+<div id="img2" class="square">2</div>
+<div id="img3" class="square">3</div>
+<div id="img4" class="square">4</div>
+<div id="img5" class="square">5</div>
+<div id="img6" class="square">6</div>
+
+<div id="img7" class="square">7</div>
+<div id="img8" class="square">8</div>
+<div id="img9" class="square">9</div>
+<div id="img10" class="square">10</div>
+<div id="img11" class="square">11</div>
+<div id="img12" class="square">12</div>
+
+<div id="img13" class="square">13</div>
+<div id="img14" class="square">14</div>
+<div id="img15" class="square">15</div>
+<div id="img16" class="square">16</div>
+<div id="img17" class="square">17</div>
+<div id="img18" class="square">18</div>
+
+<div id="next"><p>Next</p></div>
+
+<script src="script/script.js"></script>
+</body>
+</html>
