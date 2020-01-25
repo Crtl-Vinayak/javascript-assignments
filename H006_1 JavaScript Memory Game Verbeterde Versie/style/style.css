@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+body {
+    width: auto;
+    height: calc(100vh - 20px);
+    font-family: "Audiowide";
+    font-size: 1.1em;
+    margin: 10px;
+    padding: 0;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+/* div1 = player 1; div2 = 'Aan de beurt'; div3 = player 2; */
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 1 / 4 / 2 / 6; }
+.div3 { grid-area: 1 / 7 / 2 / 9; }
+
+/* div4 to div21 are image place holders */
+.div4 { grid-area: 3 / 2 / 4 / 3; }
+.div5 { grid-area: 3 / 3 / 4 / 4; }
+.div6 { grid-area: 3 / 4 / 4 / 5; }
+.div7 { grid-area: 3 / 5 / 4 / 6; }
+.div8 { grid-area: 3 / 6 / 4 / 7; }
+.div9 { grid-area: 3 / 7 / 4 / 8; }
+.div10 { grid-area: 4 / 2 / 5 / 3; }
+.div11 { grid-area: 4 / 3 / 5 / 4; }
+.div12 { grid-area: 4 / 4 / 5 / 5; }
+.div13 { grid-area: 4 / 5 / 5 / 6; }
+.div14 { grid-area: 4 / 6 / 5 / 7; }
+.div15 { grid-area: 4 / 7 / 5 / 8; }
+.div16 { grid-area: 5 / 2 / 6 / 3; }
+.div17 { grid-area: 5 / 3 / 6 / 4; }
+.div18 { grid-area: 5 / 4 / 6 / 5; }
+.div19 { grid-area: 5 / 5 / 6 / 6; }
+.div20 { grid-area: 5 / 6 / 6 / 7; }
+.div21 { grid-area: 5 / 7 / 6 / 8; }
+
+/* div22 = next button */
+.div22 { grid-area: 7 / 4 / 8 / 6; }
+
+div > p {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#rounds {
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+
+#player1 {
+    background: linear-gradient(to right bottom, #fff747, #f4f842, #e8fa3f, #dbfb3c, #cefc3b, #c0fd43, #b2fe4b, #a4fe53, #93fe63, #82fd72, #71fc80, #5ffb8e);
+}
+
+#rounds {
+    background: linear-gradient(to top, #0f34e5, #2e3fe4, #4049e2, #4e53e1, #5a5cdf, #6464db, #6d6bd7, #7573d3, #7e7bcc, #8684c6, #8e8cbe, #9694b7);
+    background-position-y: -10%;
+}
+
+#player2 {
+    background: linear-gradient(to left bottom, #fff747, #f4f842, #e8fa3f, #dbfb3c, #cefc3b, #c0fd43, #b2fe4b, #a4fe53, #93fe63, #82fd72, #71fc80, #5ffb8e);
+}
+
+#player1, #player2 {
+    color: black;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#next {
+    background: linear-gradient(to top, #ff3939, #ff503c, #ff6240, #ff7245, #ff804c, #ff8a57, #ff9463, #ff9d6f, #ffa680, #ffb091, #ffbaa1, #ffc4b1);
+    border-radius: 10px;
+    transition: all 0.6s ease-out;
+}
+
+#next:hover {
+    transform: scale(1.1);
+}
+
+#next:active {
+    transition: all 0.1s ease-out;
+    transform: scale(0.9);
+}
